@@ -1,0 +1,38 @@
+body {
+    font-family: 'Lobster', cursive;
+}
+
+#container {
+    width: 400px;
+    margin:0 auto;
+}
+
+#container form {
+    border:1px solid rgb(184, 181, 181);
+    padding: 15px 15px;
+    
+}
+#container form h3 {
+    margin-top: 5px;
+}
+
+#container input {
+    display: inline-block;
+    width: 100%;
+}
+#profilesDiv {
+    margin: 0 20px;
+    border:1px solid rgb(184, 181, 181);
+}
+.profile {  
+    padding: 10px;
+    border-bottom: 1px solid rgb(184, 181, 181);
+}
+.profile img {
+    float:left;
+    padding: 0 10px;
+}
+
+.profile:hover {
+    background-color: rgb(184, 181, 181);
+}
