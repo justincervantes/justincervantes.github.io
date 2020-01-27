@@ -2,6 +2,10 @@ body {
     font-family: 'Lobster', cursive;
 }
 
+span {
+    font-weight: bold;
+}
+
 #container {
     width: 400px;
     margin:0 auto;
