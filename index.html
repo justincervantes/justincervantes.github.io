@@ -6,15 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
-    <title>Justin Cervantes Lab 2</title>
+    <script src='script.js' defer></script>
+    <title>Justin Cervantes Lab 3</title>
 </head>
 <body>
     <div id="container">
 
         <form>
             <h3>Artist Directory</h3>
-            <input type="text" name="name" >
+            <input id="topInput" type="text" name="name" >
+            <button type="button" id="addArtistButton" onclick="showAddArtistForm()">Add artist</button>
         </form> 
+
+        <form id="inputForm">
+            <input id="addName" placeholder="Artist name" type="text" name="name" maxlength="40">
+            <input id="addAbout" placeholder="About artist" type="text" name="name" maxlength="40">
+            <input id="addImageURL" placeholder="Image url" type="text" name="name" >
+            <button type="button" id="addFieldsButton" onclick="addArtistButton()">Add</button>
+        </form>
 
         <div id="profilesDiv">
 
@@ -22,7 +31,8 @@
                 <img src="https://randomuser.me/api/portraits/med/men/1.jpg">
                 <p>
                     <span>Barot Bellingham</span><br/>
-                    Royal Academy of Painting and Sculpture
+                    Best in town
+                    <button class="deleteButton" onclick="deleteButton(this)">Delete</button>
                 </p>
             </div>
 
@@ -31,6 +41,7 @@
                 <p>
                     <span>Jonathan G. Ferrar II</span><br/>
                     Artist to Watch in 2012
+                    <button class="deleteButton" onclick="deleteButton(this)">Delete</button>
                 </p>
             </div>
             
@@ -39,6 +50,7 @@
                 <p>
                     <span>Hillary Hewitt Goldwynn-Post</span><br/>
                     New York University
+                    <button class="deleteButton" onclick="deleteButton(this)">Delete</button>
                 </p>
             </div>
 
@@ -47,6 +59,7 @@
                 <p>
                     <span>Hassum Harrod</span><br/>
                     Art College in New Delhi
+                    <button class="deleteButton" onclick="deleteButton(this)">Delete</button>
                 </p>
             </div>
             
@@ -55,6 +68,7 @@
                 <p>
                     <span>Jennifer Jerome</span><br/>
                     New Media Labs
+                    <button class="deleteButton" onclick="deleteButton(this)">Delete</button>
                 </p>
             </div>
 
