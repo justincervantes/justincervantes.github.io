@@ -88,4 +88,4 @@ app.delete('/artist/delete', (req,res)=>{
     });
 })
 
-app.listen(7000);
+app.listen(process.env.PORT || 3000);
