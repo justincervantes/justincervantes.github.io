@@ -30,4 +30,4 @@ app.get('/', (req,res) => {
 
 
 app.use(peopleRoutes);
-app.listen(7000);
+app.listen(process.env.PORT || 3000);
