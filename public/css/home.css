@@ -6,7 +6,28 @@ span {
     font-weight: bold;
 }
 
+#submitbutton {
+    padding: 7px;
+    background-color: solid rgb(184, 181, 181);
+}
+
+#container .noshowborder {
+    border: 0px;
+
+}
+#navbar {
+    background-color: #f0ad4e;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#headerform {
+    
+}
+
 #container {
+    padding-top: 25px;
     width: 400px;
     margin:0 auto;
 }
@@ -39,6 +60,9 @@ span {
     width: 100%;
 }
 
+.hidden {
+    display: none;
+}
 #addArtistButton {
     display: inline;
     width: 25%;
